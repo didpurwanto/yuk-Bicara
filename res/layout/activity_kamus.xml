@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:padding="0dp"    
+    android:background="@color/bg_grey" >
+    
+    <TableLayout 
+        android:id="@+id/table_bahasaAwal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white">        
+        <TableRow 
+            android:id="@+id/table_text_bahasaAwal"
+            android:background="@color/bg_grey"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_bahasaAwal"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:text="Bahasa Awal"
+                android:textSize="17dp"
+                android:gravity="center_vertical"
+                android:padding="0dp">
+            </TextView>            
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table_buttonBahasa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        
+        android:layout_below="@+id/table_bahasaAwal"> 
+        <TableRow 
+            android:id="@+id/table_button_bahasaAwal"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"			            
+            android:background="@color/bg_white">"            
+		     <Button
+		         android:id="@+id/bt_bahasa1"
+		         android:layout_width="110dp"		         
+		         android:layout_height="wrap_content"		         		         		         
+		         android:background="@color/bt_blue1"
+		         android:textColor="@color/bg_white"
+		         android:text="Indonesia" />		      
+		     <Button
+		         android:id="@+id/bt_bahasa2"
+		         android:layout_width="110dp"		         
+		         android:layout_height="wrap_content"		         
+		         android:background="@color/bt_blue1"
+		         android:textColor="@color/bg_white"
+		         android:text="Jawa" />		     		                
+            <Button
+		        android:id="@+id/bt_pilih"
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"		        
+		        android:background="@color/bt_blue1"
+		        android:textColor="@color/bg_white"
+		        android:text="Lainnya" /> 
+        </TableRow>
+        
+        <EditText
+	        android:id="@+id/inputKamus"
+	        android:layout_width="fill_parent"
+	        android:layout_height="100dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/table_button_bahasaAwal"	        	 
+	        android:padding="10dp"      
+	        android:layout_margin="10dp"
+	        android:hint="             Tulis kosa kata disini!"	        
+	        android:background="@color/bg_white" />        
+   </TableLayout>
+   
+   <TableLayout 
+        android:id="@+id/table_bahasaHasil"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table_buttonBahasa"
+        android:background="@color/bg_white">        
+        <TableRow 
+            android:id="@+id/table_text_bahasaHasil"
+            android:background="@color/bg_grey"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/text_bahasaHasil"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:gravity="center_vertical"
+                android:text="Terjemahan"
+                android:textSize="17dp"
+                android:padding="5dp">
+            </TextView>            
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table_buttonTerjemahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/table_bahasaHasil">
+ 
+        <TableRow 
+            android:id="@+id/table_button_Terjemahan"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"			            
+            android:background="@color/bg_white">         
+		     <Button
+		         android:id="@+id/bt_bahasaHasil1"
+		         android:layout_width="110dp"		         
+		         android:layout_height="wrap_content"		         		         		         
+		         android:background="@color/bt_blue1"
+		         android:textColor="@color/bg_white"
+		         android:text="Jawa" />		      
+		     <Button
+		         android:id="@+id/bt_bahasaHasil2"
+		         android:layout_width="110dp"		         
+		         android:layout_height="wrap_content"		         
+		         android:background="@color/bt_blue1"
+		         android:textColor="@color/bg_white"
+		         android:text="Indonesia" />		     		                
+            <Button
+		        android:id="@+id/bt_pilihHasil"
+		        android:layout_width="100dp"
+		        android:layout_height="wrap_content"		        
+		        android:background="@color/bt_blue1"
+		        android:textColor="@color/bg_white"
+		        android:text="Lainnya" /> 
+        </TableRow>
+        
+	     <TextView
+	         android:id="@+id/hasilterjemahan"
+	         android:layout_width="fill_parent"	         
+	         android:layout_height="120dp"
+	         android:layout_below="@+id/inputKamus"
+	         android:background="@color/bg_white"
+	         android:padding="10dp"
+	         android:layout_margin="10dp"
+	         android:textSize="17sp" />     
+   </TableLayout>
+
+</RelativeLayout>

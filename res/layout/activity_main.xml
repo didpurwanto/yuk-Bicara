@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    android:orientation="horizontal">
+
+	<TableLayout 
+	    android:id="@+id/table_main"
+	    android:layout_width="fill_parent"	    
+	    android:layout_height="match_parent"
+	    android:layout_margin="0dp"
+	    android:gravity="center"
+	    android:background="@color/bt_blue2"
+	    android:padding="0dp">
+	    
+	    <TableRow 
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:padding="0dp"
+	        android:layout_marginRight="0dp"
+	        android:background="@color/bt_blue1"
+	        android:gravity="center">
+	        
+	        <ImageButton
+		        android:id="@+id/iBtnKamus"
+		        android:layout_width="fill_parent"
+		        android:layout_height="match_parent"		        
+		        android:layout_gravity="center"
+		        android:padding="0dp"
+		        android:layout_marginRight="0dp"
+		        android:src="@drawable/bt_kamus" />
+	    </TableRow>
+	    
+	    <TableRow 
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:padding="0dp"
+	        android:layout_marginRight="0dp"
+	        android:background="@color/bt_blue"	        
+	        android:gravity="center">	       
+	        <ImageButton
+		        android:id="@+id/iBtnPercakapan"
+		        android:layout_width="fill_parent"
+		        android:layout_height="match_parent"		        
+		        android:layout_gravity="center_horizontal"
+		        android:padding="0dp"
+		        android:layout_marginRight="0dp"
+		        android:src="@drawable/bt_percakapan" />
+	    </TableRow>
+	</TableLayout>
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_grey_new">
+	
+    <TableLayout 
+        android:id="@+id/table_percakapan"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@color/bg_white">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+			<ImageView
+		        android:id="@+id/logo"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"		        
+		        android:src="@drawable/icon_percakapan" />			
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:width="10dp" />
+			<EditText
+		        android:id="@+id/editTextPilihanPercakapan"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_alignRight="@+id/textViewPercakapan"
+		        android:gravity="center_vertical"
+		        android:hint="Pilih Jenis Percakapan"
+		        android:editable="false"
+		        android:ems="11" />		           
+        </TableRow>        
+    </TableLayout>
+    
+    <TableLayout
+        android:id="@+id/table_text_percakapan"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/table_percakapan" 
+        android:background="@color/bg_white" >
+
+        <TableRow >
+			<TextView
+		        android:id="@+id/textViewPercakapan"
+		        android:layout_width="fill_parent"		        
+		        android:layout_height="wrap_content"
+		        />		           
+        </TableRow>        
+    </TableLayout>
+    
+    <TableLayout 
+        android:id="@+id/table_bt_mainkan"
+        android:layout_below="@+id/table_text_percakapan"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+        <TableRow 
+            android:gravity="center">
+            <ImageButton
+		        android:id="@+id/iBtnMainkanSuara"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"		        
+		        android:padding="0dp"
+		        android:scaleType="fitXY"
+		        android:src="@drawable/bt_mainkan1" />
+        </TableRow>        
+    </TableLayout>
+</RelativeLayout>

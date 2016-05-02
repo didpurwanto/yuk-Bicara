@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="null_name"> </string>
+    <string name="app_name">yukBicara!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_awal">AwalActivity</string>
+    <string name="title_activity_kamus">KamusActivity</string>
+    <string name="title_activity_percakapan">PercakapanActivity</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    
+    <color name="bt_blue2">#58A0A8</color>
+    <color name="bt_blue1">#6DBDC6</color>
+    <color name="bt_blue">#D1ECFB</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_item_bg">#ffffff</color>
+    <color name="view_divider_color">#BABABA</color>    
+    <color name="bgcolor_blue">#A1D6F7</color>    
+    <color name="bgcolor_white">#F9F7F8</color>
+    <color name="bg_white">#FEFEFE</color>
+    <color name="bg_grey">#E6E7E8</color>   
+    <color name="font_blue">#2890B6</color>
+    <color name="font_black">#282829</color>
+    <color name="font_grey">#727376</color>
+    <color name="font_red">#F06277</color>
+    <color name="font_yellow">#FAB914</color>
+    <color name="font_green">#5CA47A</color>
+    <color name="font_green2">#96AA39</color>
+    <color name="bg_grey_new">#E6E7E8</color>
+
+</resources>
